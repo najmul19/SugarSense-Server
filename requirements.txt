@@ -4,3 +4,6 @@ joblib
 numpy
 scikit-learn
 gunicorn
+xgboost
+lightgbm
+
