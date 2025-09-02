@@ -10,6 +10,13 @@ scaler = joblib.load("scaler.pkl")
 app = Flask(__name__)
 CORS(app)  # allow React Native app to access
 
+
+# Test route for root
+@app.route("/")
+def home():
+    return "SugarSense API is running!"  # This is what shows in the browser
+
+
 # Feature order must match training
 FEATURE_ORDER = [
     "GenHlth", "HighBP", "BMI", "Age", "HighChol", "CholCheck", "Income", "Sex",
